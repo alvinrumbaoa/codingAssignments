@@ -1,29 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <meta charset="utf-8"> <!---->
+        <meta name="description" content="The best website to ever made">
+        <!--Meta tags make your web page more meaningful for search engines like Google.-->
+        <link rel="stylesheet" href="newCSS.css">
+        <script src=s></script>
+        <title>My First Web {{proprtyName | date:'longDate'}} </title>
         <body>
-            <h1>Hello World!</h1>
-
-            <p>Some paragraph content!</p>
-            <!--This is a Comment-->
-            <h3>Bacon Ipsum, Dolor Amet?</h3>
-            <p> Bacon ipsum dolor amet tail salami ball tip leberkas venison.
-                Pig pork loin shoulder pork
-                fatback corned beef chuck shank drumstick cow doner cupim
-                capicola. Swine before ground, kiel
-                basa meatball doner jowl rump chuck pastrami venison spare ribs
-                turducken sirloin. Sausage
-                venison doner brisket, andouille pork pastrami strip steak
-                drumstick tri-tip cupim.</p>
-            <ul>
-                <li>Pizza</li>
-                <li>Hot Dog</li>
-                <li>ChickenJoy</li>
-            </ul>
-        </body>
-    </head>
+        </head>
+        <h1>Hello World!</h1>
+        
+        <p>Some paragraph content!</p>
+        <!--This is a Comment-->
+        <h3>Bacon Ipsum, Dolor Amet?</h3>
+        <p> Bacon ipsum dolor amet tail salami ball tip leberkas venison.
+            Pig pork loin shoulder pork
+            fatback corned beef chuck shank drumstick cow doner cupim
+            capicola. Swine before ground, kiel
+            basa meatball doner jowl rump chuck pastrami venison spare ribs
+            turducken sirloin. Sausage
+            venison doner brisket, andouille pork pastrami strip steak
+            drumstick tri-tip cupim.</p>
+        <ul>
+            <li>Pizza</li>
+            <li>Hot Dog</li>
+            <li>ChickenJoy</li>
+            <li>French Fries</li>
+        </ul>
+        <ol>
+            <li>Mozarella</li>
+            <li>Cheese</li>
+            <li>Bacon</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cost</th>
+                    <th>Item Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>$15.00</td>
+                    <td>$60.00</td>
+                </tr>
+                <tr>
+                    <td>Naruto Episode 1</td>
+                    <td>Naruto Episode 2</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="akatsuki.png" alt="akatsuki">
+        <br><a href="www.google.com">Google</a>
+        
+        <form action="process.php" method="post">
+            <p>Please Register</p>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+        
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+        
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+        
+            <p>Select your gender:</p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+        
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            
+            <label for="decline">Prefer not to say</label>
+            <input type="radio" id="decline" name="gender" value="decline">
+        
+            <p>Select 3 of your favorite colors:</p>
+            <label for="blue">Blue</label>
+            <input type="checkbox" id="blue" name="color" value="blue">
+            
+            <label for="green">Green</label>
+            <input type="checkbox" id="green" name="color" value="green">
+        
+            <label for="red">Red</label>
+            <input type="checkbox" id="red" name="color" value="red">
+            
+            <label for="black">Black</label>
+            <input type="checkbox" id="black" name="color" value="black">
+        
+            <label for="purple">Purple</label>
+            <input type="checkbox" id="purple" name="color" value="Purple">
+            
+            <p>Say a few words about yourself:</p>
+            <textarea name="description"></textarea>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <label for="pw_confirm">Password Confirmation:</label>
+            <input type="password" id="pw_confirm" name="password_confirmation">
+            
+            <input type="submit" value="Click here to register">
+        </form>
+            <p>Please Register</p>
+            <label>
+                Name:<input type="text" name="name">
+            </label>
+            <p>Select your gender:</p>
+            <label>
+                Male<input type="radio" name="gender" value="male">
+            </label>
+            <label>
+                Female<input type="radio" name="gender" value="female">
+            </label>
+            <label>
+                Prefer not to say<input type="radio" name="gender"
+                    value="decline">
+            </label>
+            <p>For security, enter your password.</p>
+            <label>
+                Password:<input type="password" name="password">
+            </label>
+            <input type="submit" value="Click here to register">
+        </form>
+    </body>
 </html>
