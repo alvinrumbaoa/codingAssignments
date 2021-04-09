@@ -1,9 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 #wrapper {
     background-color: silver;
     width: 950px;
-    height: 950px;
-    display: block;
-    margin: 10px auto;
+    margin: 0px auto;
+    padding: 15px;
 }
 
 #header {
@@ -12,33 +16,37 @@
     min-height: 150px;
     width: 900px;
     background-color: green;
-    margin: 10px;
+    margin-bottom: 10px;
     display: inline-block;
 
 }
 
+
 #navigation {
-    min-height: 100px;
-    width: 180px;
-    padding: 245px 10px 10px 0px;
+    height: 300px;
+    width: 200px;
     margin: 10px;
     background-color: blue;
     display: inline-block;
+    vertical-align: top;
 }
 
 #main_content {
     min-height: 400px;
-    width: 715px;
+    width: 700px;
+    padding: 15px;
     background-color: red;
     display: inline-block;
+    margin-left: 15px;
 }
 
 .subcontents {
     min-height: 200px;
-    width: 200px;
+    width: 210px;
     margin: 15px;
     background-color: yellow;
     display: inline-block;
+    margin-right: 15px;
 }
 
 #advertisement {
