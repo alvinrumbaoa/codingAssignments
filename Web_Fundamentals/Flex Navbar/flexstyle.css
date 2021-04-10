@@ -1,0 +1,17 @@
+.center-box {
+    width: 1200px;
+    height: 500px;
+    background-color: burlywood;
+    display: flex;
+    margin: auto;
+}
+
+.center-item {
+    width: 150px;
+    height: 150px;
+    background-color: chocolate;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
