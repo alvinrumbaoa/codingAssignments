@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* PART 1 */
+.center-box {
+    height: 500px;
+    background-color: burlywood;
+    display: flex;
+}
+
+.center-item {
+    width: 150px;
+    height: 150px;
+    background-color: chocolate;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+/* PART 2 */
+@font-face {
+    font-family: Montes;
+    src: url(Montserrat/Montserrat-Light.ttf);
+}
+
+img {
+    margin: 10px;
+}
+
+.nav {
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    align-items: center;
+
+    font-family: Montes;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.button {
+    font-family: Montes;
+    list-style-type: none;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 25px;
+    text-decoration: none;
+}
+
+a {
+    font-size: 20px;
+    flex: 4;
+    color: white;
+    text-decoration: none;
+}

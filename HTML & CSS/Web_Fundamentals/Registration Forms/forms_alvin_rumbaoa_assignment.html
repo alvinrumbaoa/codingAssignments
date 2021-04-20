@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h1>Registration Forms</h1>
+        <hr>
+        <form>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name"><br>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name"><br>
+            <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="email"><br>
+            <label for="password">Password:</label>&nbsp;&nbsp;
+            <input type="password" id="password" name="password"><br>
+            <label for="pw_confirm">PW Confirm:</label>&nbsp;&nbsp;
+            <input type="password" id="pw_confirm" name="password_confirmation"><br>
+            <label for="birth_day">Birthday:</label>&nbsp;&nbsp;
+            <input type="date" id="birth_day"><br>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other"><br>
+            <label for="about">A short description about yourself</label><br>
+            <textarea name="description" id="about" cols="30" rows="10"></textarea><br>
+            <label for="favorite">Favorite</label>
+            <select name="favorite" id="favorite">
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="MERN">MERN</option>
+                <option value="Ruby">Ruby on Rails</option>
+            </select><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

@@ -1,2 +1,0 @@
-# codingAssignments
-CD assignments
