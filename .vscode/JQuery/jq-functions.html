@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My jQuery Basic Assignment</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+
+        var msg ="SAGE ART!";
+        $('#target').click(function(){
+                alert("Welcome to hidden leaf vilage");
+            });
+        $('#hide').click(function(){
+            $('img').hide();
+            
+        });
+        $('#show').click(function(){
+            $('img').show();
+            
+        });
+        $('#append').click(function(){
+            $('#result').append('<img src="chakra.png" alt="chakra" id="result" width="35" height="35">');
+            
+        });
+        $('#hover').click(function(){
+            alert("RASENGANN!!!");
+            
+        });
+        
+        
+        });
+        
+        </script>
+    </head>
+    <body>
+
+        <img class="konoha" src="konoha.png" alt="konoha symbol" width="20"
+            height="20"><h1>Naruto</h1>
+        <button id="target">Fire</button>
+        <hr>
+        <img src="naruto.png" alt="boruto" id="boruto">
+        <button id="hide">I will hide boruto</button>
+        <button id="show">I will show boruto</button>
+        <p id="hover">I will hover boruto</p>
+        <hr>
+        <div id="result"></div>
+        <button id="append">Click to Add more Chakra</button>
+    </body>
+</html>
