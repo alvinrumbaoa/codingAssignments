@@ -4,22 +4,129 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+        <title>My jQuery Basic Assignment</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript">
         $(document).ready(function(){
+
+        var msg ="SAGE ART!";
+        $('#target').click(function(){
+                alert("Welcome to hidden leaf vilage");
+            });
+        $('#hide').click(function(){
+            $('img').hide();
             
-        
-        })
-        $('#click-btn').click(function(){
-            alert("clicked done");
         });
+        $('#show').click(function(){
+            $('img').show();
+            
+        });
+        $('#append').click(function(){
+            $('#result').append('<img src="chakra.png" alt="chakra" id="result" width="35" height="35">');
+            
+        });
+        $('#hover').click(function(){
+            alert("RASENGANN!!!");
+            
+        });
+        
+        $('#slide-down').click(function(){
+            $('#call-pain').slideDown();
+            
+        });
+        $('#slide-toggle').click(function(){
+            $('#call-pain').slideToggle();
+            
+        });
+        $('#slide-up').click(function(){
+            $('#call-pain').slideUp();
+            
+        });
+
+        $('#toggle').click(function(){
+            $('#display-toggle').toggle();
+            
+        });
+        $('.addingClass').click(function(){
+            $('.addingClass').addClass("selected highlighted")
+            
+        });
+
+
+        $('#click-fade-in').click(function(){
+            $('#show-sasuke').fadeIn();
+            $('.addingClass').addClass("selected highlighted")
+            
+        });
+        $('#click-fade-out').click(function(){
+            $('#show-sasuke').fadeOut();
+            $('.addingClass').addClass("selected highlighted")
+            
+        });
+        
+        $('#after').click(function(){
+            $('#after').after(document.createTextNode("Thank you for supporting Naruto!"))
+        });
+        $('#before').click(function(){
+            $('#before').after(document.createTextNode("Enjoy the show!!"))
+        });
+        $( 'p' ).click(function() {
+            var htmlString = $( this ).html();
+            $( this ).css(font-family, 'Arial')
+        });
+        var title = $( "em" ).attr( "title" );
+        $( "div" ).text( title );
+        function displayVals(){
+        var modeValues = $( "#mode" ).val();
+        $( "span" ).html( "<b>Mode:</b> " + modeValues);
+        }
+        
+        $( "select" ).change(displayVals);
+        displayVals();
+        });
+        
         </script>
-        <title>My jQuery Basic Assignment</title>
     </head>
     <body>
-        <h1>Click</h1>
+        <select id="mode">
+            <option>Kyubi Mode</option>
+            <option>Sage</option>
+        </select>
+        <p id="before">I would like to say: </p>
+        <img class="konoha" src="konoha.png" alt="konoha symbol" width="20"
+            height="20"><h1>Naruto</h1>
+        <button id="target">Fire</button>
+        <hr>
+        <img src="naruto.png" alt="boruto" id="boruto">
+        <button id="hide">I will hide Naruto</button>
+        <button id="show">I will show Naruto</button>
+        <p id="hover">Enemy hover here!</p>
+        <hr>
+        <h1>Charge more Chakra</h1>
+        <div id="result"></div>
+        <button id="append">Click to Add more Chakra</button>
+        <hr>
+        <div id="call-pain"><img src="paintendo.png" alt="pain-tendo"
+                width="35" height="20"></div>
+        <button id="slide-down">Slide down to challenge the Pain</button>
+        <button id="slide-toggle">Slide Toggle to Hide from Pain</button>
+        <button id="slide-up">Slide Up to Dodge Pain</button>
+        <hr>
+        <p class="addingClass">kyubi Mode</p>
+        <hr>
+        <p style="display: none" id="display-toggle">Good Bye!</p>
+        <button id="toggle">Click to Go out to Village</button>
+        <hr>
+        <div id="click-fade-in">Add Reinforcements</div>
+        <div id="click-fade-out">Hide Reinforcements</div>
+        <img src="sasuke.png" alt="sasuke" id="show-sasuke">
 
-        <p id="click-p">Click the button</p>
-        <button id="click-btn">Add Class</button>
+        <p id="after">I would like to say: </p>
+
+
+        <div id><em>CHIDORII!</em></div>
+
     </body>
 </html>
