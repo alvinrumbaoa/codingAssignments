@@ -5,6 +5,7 @@
 }
 
 h1 {
+    display: flex;
     justify-content: center;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -12,27 +13,36 @@ h1 {
 }
 
 body {
-    background-image: linear-gradient(red, orange, yellow);
-    background-repeat: no-repeat;
+    background-color: orange;
+
 }
 
-img {
-    display: flexbox;
-    flex-direction: row;
-    width: 120ch;
-    height: 25vh;
-    padding: 10px;
+.container {
+    width: 75%;
     justify-content: center;
 }
 
 #btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 2px 2px 1px 1px black;
-    background-color: green;
+    background-color: orangered;
+    color: aliceblue;
     width: 25%;
     height: 40%;
+    border-radius: 5px;
 }
 
 .box-img {
-    display: flexbox;
-    flex-direction: row;
+    justify-content: center;
+    box-decoration-break: clone;
+    border: 10px green;
+    width: 40ch;
+    height: 30vh;
+    padding: 10px;
+}
+
+.box-img:hover {
+    opacity: 85%;
 }

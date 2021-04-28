@@ -1,10 +1,11 @@
 $(document).ready(function () {
+
     $('img').click(function () {
         $(this).hide();
     });
-
-    $("btn").click(function () {
-        $('img').toggle();
+    $("#btn").click(function () {
+        $('.box-img').show();
     });
+
 
 });
