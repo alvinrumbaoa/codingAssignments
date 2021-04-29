@@ -16,14 +16,15 @@
         <img src="img/ninja2.png" alt="2" data-alt-src="img/cat2.png">
         <img src="img/ninja3.png" alt="3" data-alt-src="img/cat3.png">
         <img src="img/ninja4.png" alt="4" data-alt-src="img/cat4.png">
-
+        o
         <script>
             $(document).ready(function(){
                 $('img').click(function(){
-                  $(this).appendTo('data-alt-src');
+                    var getCat = $(this).data('alt-src');
+                    $(this).attr('data-alt-src', $(this).attr('src'));
+                    $(this).attr('src', getCat);   
                 });
             });
-        
         </script>
     </body>
 </html>
