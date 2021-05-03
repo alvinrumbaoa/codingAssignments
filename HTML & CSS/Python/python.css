@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 
 body {
@@ -152,7 +152,14 @@ body {
     justify-content: center;
 }
 
-.bottom-left-pane ul li {}
+.bottom-left-pane ul li {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 .bottom-right-pane {
     display: flex;
